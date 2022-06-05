@@ -1,0 +1,8 @@
+# [browserslit]
+# ・この名前であれば、自動的に webpack によって参照されます。
+# ・webpack.config に target 属性があると、このファイルは無視されます。
+# ・デフォルト以外のファイル名を使用したければ、環境変数 BROWSERSLIST_CONFIG によって指定できます。
+#
+#
+
+ie 6
