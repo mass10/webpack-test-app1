@@ -1,0 +1,17 @@
+{
+    "[rust]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
+    },
+    "[javascript]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.maxTokenizationLineLength": 2500
+    },
+    "files.associations": {
+        "webpack.*.js": "javascript",
+        "webpack.config.js": "javascript",
+        "*.js": "javascript"
+    },
+}
