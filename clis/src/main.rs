@@ -29,16 +29,19 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
 	execute_command("yarn", &["install"])?;
 	execute_command("yarn", &["tsc", "--build", "tsconfig.json"])?;
 	execute_command("yarn", &["webpack", "--config", "webpack.config.js"])?;
+	execute_command("yarn", &["es-check", "es5", "dist/bundle.js"])?;
 
 	return Ok(());
 }
 
 fn main() {
 	println!("### START ###");
+
 	let result = run();
 	if result.is_err() {
 		println!("[ERROR] {}", result.unwrap_err());
 		return;
 	}
+
 	println!("--- END ---");
 }
