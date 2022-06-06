@@ -24,7 +24,8 @@ fn delete_file(path: &str) -> Result<(), Box<dyn std::error::Error>> {
 }
 
 fn run() -> Result<(), Box<dyn std::error::Error>> {
-	delete_file("dist/bundle.js")?;
+	// 出力ファイルを毎回削除
+	// delete_file("dist/bundle.js")?;
 
 	execute_command("yarn", &["install"])?;
 	execute_command("yarn", &["tsc", "--build", "tsconfig.json"])?;
