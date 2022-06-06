@@ -1,4 +1,4 @@
-function getCurrentTimestamp(): string {
+export const getCurrentTimestamp = (): string => {
     return new Date().toISOString();
 }
 
@@ -8,14 +8,14 @@ export class Logger {
     }
 
     public static log(message: string): void {
-        console.log(message);
+        console.log(`${getCurrentTimestamp()}`, message);
     }
 
     public static error(message: string): void {
-        console.error(message);
+        console.error(`${getCurrentTimestamp()}`, message);
     }
 
     public static warn(message: string): void {
-        console.warn(message);
+        console.warn(`${getCurrentTimestamp()}`, message);
     }
 }
