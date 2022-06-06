@@ -1,5 +1,9 @@
 # webpack-test-app1
- webpack の練習
+　webpack の練習
+ 
+ 
+# メモ
+* babel-preset-es3 ... ES3 レベルに落としてからパックするやつ
  
 # LINKS
 * https://nx.dev/guides/customize-webpack
